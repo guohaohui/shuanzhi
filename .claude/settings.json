@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Edit(*)",
+      "Write(*)",
+      "Read(*)",
+      "WebFetch(*)",
+      "WebSearch(*)",
+      "NotebookEdit(*)",
+      "Agent(*)",
+      "TaskCreate(*)",
+      "CronCreate(*)",
+      "CronDelete(*)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"systemMessage\":\"💡 代码有变化请同步更新 shuanzhi-完整技术文档.md | ⚠️ 确保代码兼容 FT2000+KylinV10+P400(sm_61)\"}'"
+          }
+        ]
+      }
+    ]
+  }
+}
