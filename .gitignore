@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+
+# Build artifacts (binary directories)
+cpu_base/
+cpu_omp/
+cpu_simd/
+cpu_float/
+cpu_simd_float/
+cpu_omp_simd/
+cpu_omp_simd_float/
+cpu_opt/
+gpu_base/
+gpu_fp32/
+gpu_algo/
+gpu_mem/
+gpu_opt/
+
+# Benchmark output files
+bench_result_*.txt
+bench_summary_*.txt
+ft2000_bench_result_*.txt
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Compiled binaries (混杂在源码目录中的编译产物)
+shuanzhi/ekf_baseline
+shuanzhi/ekf_baseline_big
+shuanzhi/hungarian_cpu
+shuanzhi/hungarian_gpu
+shuanzhi/kalman_cpu
+shuanzhi/kalman_gpu
+shuanzhi/rk4_cpu
+shuanzhi/rk4_gpu
+shuanzhi/rk4_gsl_gpu
+shuanzhi_cpu_opt/*_baseline
+shuanzhi_cpu_opt/*_omp
+shuanzhi_cpu_opt/*_opt
+shuanzhi_gpu_opt/*_gpu_opt
+shuanzhi_gpu_opt/*_gpu_orig
+shuanzhi_gpu_opt/*_opt_64k
+shuanzhi_gpu_opt/*_orig_64k
+test_fix/
+shuanzhi/ekf_cpu
+shuanzhi/ekf_gpu
+
+# Temporary files
+*.swp
+*.swo
+*~
